@@ -1,0 +1,278 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family:'Kanit';
+    font-weight: bold;
+    color:rgba(0, 0, 0, 0.9);
+}
+div{
+    border: 1px solid blak;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
+    border-radius: 2px;
+}
+.root{
+    height: 100vh;
+    width: 100vw;
+}
+.branch-1{
+    background-color: #2A66B1;
+    /* background-color: #B8DFBA; */
+    height: 6%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.branch-2{
+    background-color: #88BEE6;
+    /* background-color: #125345; */
+    height: 5%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+}
+.branch-1 div{
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+
+}
+.branch-3{
+    background-color: #FEFEFE;
+    /* background-color: #FFFFD9; */
+    height: 64%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+form{
+    display: flex;
+    justify-content: space-around;
+    max-height: 396.79px;
+    width: 100%;
+}
+form input{
+        margin-bottom: 10px;
+        padding: 5px;
+        width: 100%;
+        border: none;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+.list_name{
+    height: 90%;
+}
+button[type=submit]{
+ background-color: #2A66B1;
+ color: #FEFEFE;
+ padding: 10px;
+ width: 100%;
+ border: none;
+ color: white;
+}
+.branch-3 form input:focus{
+  border: 0.5px solid #2A66B1;
+}
+.branch-4{
+    background-color: #2A66B1;
+    /* background-color: #125345; */
+    height: 5%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5px;
+}
+.branch-5{
+    background-color: #88BEE6;
+    /* background-color: #B8DFBA; */
+    height: 16%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.branch-6{
+    background-color: #E0F1FC;
+    /* background-color: #125345; */
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2px;
+}
+.branch-7{
+    background-color: #FEFEFE;
+    height: 4%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px;
+}
+.Tally_fun{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.Tally_main{
+    width: 50%;
+    
+}
+.footer{
+    width: 20%;
+    
+}
+.main-function{
+    height: calc(100 / 27)px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1);
+}
+.branch-6 div{
+    margin: 2px;
+}
+.branch-1 div{
+    /* background-color: #E0F1FC; */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+/* .branch-1 div:hover{ 
+    background-color: #E0F1FC;
+}*/
+.Tally_main_2{
+    height: 80%;
+    width: 50%;
+    background-color: #E0F1FC;
+    /* background-color: #C9E6CA; */
+    border-top: 15px #2A66B1 solid;
+    /* border-top: 10px #125345 solid; */
+}
+p{
+    text-align: left;
+    width: 90%;
+}
+.TM_2{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.Tally_main_2{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.Tally_main_2 ul{
+    width: 100%;
+}
+ul a{
+    text-decoration: none;
+    width: 200%;
+    color: brown;
+    /* font-family: 'Open Sans'; */
+}
+ul li{
+    text-align: left;
+    margin: 12px 0;
+    text-align: center;
+}
+
+li:hover{
+    background-color: rgb(228, 228, 121);
+}
+.list_name ul{
+    text-decoration: none;
+}
+@media  screen and (max-width:768px) {
+    .branch-6{
+        display: none;
+    }
+    .branch-1,.branch-2,.branch-3,.branch-4,.branch-5,.branch-7{
+        width: 100%;
+        padding: 15px;
+    }
+    .Tally_main_2{
+        width: 80%;
+        height: 50%;
+    }
+    *{
+        overflow: scroll;
+    }
+}
+@media  screen and (max-width:500px) {
+    .branch-6{
+        display: none;
+    }
+    .branch-1,.branch-2,.branch-3,.branch-4,.branch-5,.branch-7{
+        width: 100%;
+        padding: 15px;
+    }
+    .Tally_main_2{
+        width: 80%;
+        height: 50%;
+    }
+    *{
+        overflow: scroll;
+        font-size: 10px;
+    }
+    body{
+        box-sizing: border-box;
+    }
+}
+svg{
+    height: 11px;
+    width: 11px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 6px;
+}
+.RMD{
+    display: flex;
+    justify-content: space-between;
+}
+.RMD div{
+ box-shadow: none;
+}
+.Tally_main_1{
+  text-align: center;
+  text-decoration: none;
+}
+.fun_date{
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+}
+.Tally_main div{
+    margin: 10px;
+}
+.Tally_main div{
+    box-shadow: none;
+}
+.Tally_formData form{
+ box-shadow: none;
+}
+.Tally_formData{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: none;
+    width: 30%;
+    height: 100%;
+}
+.input-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0px;
+    padding: 10px;
+    box-shadow: none;
+}
+.new1 div{
+    width: 30%;
+}
